@@ -1,0 +1,147 @@
+ * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+        }
+        main{
+            height: auto;
+        }
+
+        .background-fixed {
+            height: 100vh;
+            width: 100%;
+            background-image: url('/static/Images/imgexplainhead.jpg');
+            background-position: center;
+            background-size: cover;
+            z-index: -1;
+            /* position: fixed; */
+        }
+
+        
+
+        .row {
+            height: 100%;
+            width: 100%;
+        }
+
+        .card {
+            height: 100%;
+            border: none;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 30%;
+        }
+
+        .card-title {
+            font-size: 32px;
+            font-weight: 700;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+        .card-text {
+            font-size: 20px;
+            font-weight: 500;
+            text-decoration: none;
+            font-family: sans-serif;
+            margin-bottom: 30px;
+
+        }
+.main-page {
+    top: 100vh;
+    background-color: rgb(22, 22, 22); 
+    height: 300vh;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main-rows1{
+    height: 27%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:3%;
+
+}
+.img-row1{
+    width: 40%;
+}
+.text-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+.img-right{
+    width: 70%;
+    height: 100%;
+}
+
+.head-row{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+.card-title{
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
+   }
+.card-text{
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+   font-family: "Roboto",Helvetica,Arial,sans-serif;
+    margin-bottom: 30px;
+
+}
+.width60{
+    width: 60%;
+}
+
+.card-title1{
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
+   }
+.card-text1{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+   font-family: "Roboto",Helvetica,Arial,sans-serif;
+    margin-bottom: 30px;
+}
+
+.single-write-head1{
+     color: rgb(122, 122, 122);
+    font-family: Bahnschrift;
+    margin-top: 0px;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 480;
+}
+.single-write-para1{
+     margin-top: -10px;
+    color: rgb(122, 122, 122);
+    font-family: Bahnschrift;
+    font-size: 16px;
+
+}

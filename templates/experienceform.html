@@ -1,0 +1,249 @@
+<html>
+
+<head>
+    <title>Experience</title>
+    <link rel="stylesheet" type="text/css" href="/static/Css/forms.css">
+    <link rel="stylesheet" type="text/css" href="/static/Css/homepage/footer.css">
+    <link rel="stylesheet" type="text/css" href="/static/Css/homepage/header.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css'>
+
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body style=" background-image: linear-gradient(45deg, 
+    rgba(6, 12, 48, 0.3),
+     rgba(64, 127, 190, 0.4)),
+     url(/static/Images/2.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+    <section class="navigation-section sticky">
+        <div class="container text-black">
+            <div class="item it">
+                <h5 class="j heading text-black">DISCOVER TRAVELS</h5>
+                <small class="j heading-small text-black">Travel With Experience </small>
+            </div>
+            <div class="item if">
+
+                <div class="i"> <a href="/homepage" class="link link-c btn-logout text-black">home</a></div>
+                <div class="i"><a href="/hosting" class="link link-c btn-logout text-black">destinations</a></div>
+                <div class="i"><a href="/inspiration" class="link link-c btn-logout text-black">inspiration</a></div>
+                <div class="i"><a href="/tourslist" class="link link-c btn-logout text-black">Trips</a></div>
+                <div class="i">
+                    <form action="/logout" method="post">
+                        <button type="submit" class="link link-c text-black btn-logout">Logout</button>
+                    </form>
+                </div>
+
+            </div>
+            <!-- <div class="item">
+                            <a href="/hosting" class="round-btn bg-black text-white">Become Host</a>
+                        </div> -->
+        </div>
+    </section>
+
+
+    <form>
+        <table class="main2 col-11 col-md-8" style="color: white; background: #00000085; margin: 3rem auto !important;">
+            <tr>
+                <th>
+                    <table class="sub-table">
+                        <td>
+                            <h1 class="p-2 title-head " style="color: white; text-align: center;">Share your Experiences
+                                here!</h1>
+                        </td>
+                    </table>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <table class="sub-table">
+                        <td class="col_1"><label for="name">Name</label></td>
+                        <td><input type="text" name="name" id="name" placeholder="Name" class="" required></td>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="sub-table">
+                        <td class="col_1"><label for="ph_no">Phone Number</label></td>
+                        <td><input type="text" name="ph_no" id="ph_no" placeholder="Phone Number" required></td>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="sub-table">
+                        <td class="col_1"><label for="age">Age</label></td>
+                        <td><input type="number" min="0" name="age" id="age" placeholder="Age" required></td>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="sub-table">
+                        <td class="col_1"><label for="title">Title of Experience</label></td>
+                        <td><input type="text" name="title" id="title" placeholder="Title" required></td>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="sub-table">
+                        <td class="col_1"><label for="location">Location</label></td>
+                        <td><input type="text" name="location" id="location" placeholder="Location" required></td>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="sub-table">
+                        <td class="col_1"><label for="category">Catagory of Experience</label></td>
+                        <td><input type="text" name="category" id="category" placeholder="Catagory" required></td>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="sub-table">
+                    <table><br>
+                        <td class="col_1"><label for="requests">Share your exprience and review here</label></td>
+                        <td><textarea type="comment" rows="5" cols="100" name="requests" id="requests"
+                                placeholder="Write here"></textarea></td>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="upload-btn-wrapper">
+                    <table class="sub-table">
+
+                        <td class="col_1"><label for="l_name">Upload Pictures</label></td>
+                        <td><input class="input-file" id="my-file1" type="file">
+                            <label tabindex="0" for="my-file" class="input-file-trigger">Add a Picture</label>
+                        </td>
+                        <td>
+                            <input class="input-file" id="my-file2" type="file">
+                            <label tabindex="0" for="my-file" class="input-file-trigger">Add a Picture</label>
+                        <td>
+                            <input class="input-file" id="my-file3" type="file">
+                            <label tabindex="0" for="my-file" class="input-file-trigger">Add a Picture</label>
+
+                        </td>
+                    </table>
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <button class="submit text-light m-3" value="submit">submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <section class="footer-section">
+
+        <div class="containerss">
+            <div class="link-group">
+                <div class="links h"> <a href="#" class="a-head">Bestemmingam</a></div>
+                <div class="links"> <a href="#" class="a-link">Africa</a> </div>
+                <div class="links"> <a href="#" class="a-link">New zealand</a> </div>
+                <div class="links"> <a href="#" class="a-link">Austarlia</a></div>
+                <div class="links"> <a href="#" class="a-link">America</a></div>
+            </div>
+
+            <div class="link-group">
+                <div class="links h"> <a href="#" class="a-head">theema's</a></div>
+                <div class="links"> <a href="#" class="a-link">Documentation</a> </div>
+                <div class="links"> <a href="#" class="a-link">Blog</a> </div>
+                <div class="links"> <a href="#" class="a-link">Themes</a></div>
+                <div class="links"> <a href="#" class="a-link">term of use</a></div>
+            </div>
+
+            <div class="link-group">
+                <div class="links h"> <a href="#" class="a-head">Best of travel</a></div>
+                <div class="links"> <a href="#" class="a-link">Road to Road</a> </div>
+                <div class="links"> <a href="#" class="a-link">team huge</a> </div>
+                <div class="links"> <a href="#" class="a-link">by air travel</a></div>
+                <div class="links"> <a href="#" class="a-link">contact us</a></div>
+            </div>
+
+            <div class="link-group">
+                <div class="links h"> <a href="#" class="a-head">News letter</a></div>
+                <div class="links"> <a href="#" class="a-link">have subscription</a> </div>
+                <div class="links colorl set">
+                    <input type="email" name="email" id="" placeholder="Example@gmail.com">
+                    <a>
+                        <ion-icon name="mail-outline" size="large"></ion-icon>
+                    </a>
+                </div>
+                <div class="links">
+                    <a href="" class="colorl">
+                        <ion-icon name="logo-twitter" size="large"></ion-icon>
+                    </a> &nbsp;
+                    <a href="" class="colorl">
+                        <ion-icon name="logo-instagram" size="large"></ion-icon>
+                    </a> &nbsp;
+                    <a href="" class="colorl">
+                        <ion-icon name="logo-whatsapp" size="large"></ion-icon>
+                    </a>&nbsp;
+                    <a href="" class="colorl">
+                        <ion-icon name="logo-facebook" size="large"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container2">
+            <div class="footer-head">
+                <h1 class="footer-heaading">
+                    Breathe
+                </h1>
+            </div>
+
+
+        </div>
+        <div class="conatiner3">
+            <div class="lefty footer-lower-left">
+                <div class="lower-link row-two"> <a href="#" class="a-link">All right reserved &copy;2021</a>
+                    <div class="writehr"></div>
+                </div>
+                <div class="lower-link row-two"> <a href="#" class="a-link">Best Travel</a>
+                    <div class="writehr"></div>
+                </div>
+                <div class="lower-link row-two"> <a href="#" class="a-link">About us</a>
+                    <div class="writehr"></div>
+                </div>
+                <div class="lower-link row-two"> <a href="#" class="a-link">Contact us</a> </div>
+
+            </div>
+            <div class="righty footer-lower-right">
+                <a href="" class="logo-links">
+                    <ion-icon name="bed-sharp" size="large"></ion-icon> &nbsp;
+                </a>
+                <a href="" class="logo-links">
+                    <ion-icon name="logo-wechat" size="large"></ion-icon> &nbsp;
+                </a>
+                <a href="" class="logo-links">
+                    <ion-icon name="logo-octocat" size="large"></ion-icon>&nbsp;
+                </a>
+                <a href="" class="logo-links">
+                    <ion-icon name="paw-sharp" size="large"></ion-icon>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>

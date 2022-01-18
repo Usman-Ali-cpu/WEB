@@ -1,0 +1,364 @@
+html{
+    font-size: 10px;
+
+}
+
+.btn-white{
+    background-color: #fff;
+    color: black;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    border-radius: 2.5rem;
+    font-size: 1.7rem;
+}
+.btn-animate{
+    transform: movetobottom 2s ease-out  2s;
+    animation-fill-mode: backwards;
+}
+
+.height-section{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    
+}
+.review-section-heading{
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        color: rgb(47, 47, 48);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+}
+.btn1:link,
+.btn1:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    transition: all .4s;
+}
+
+.btn1:hover{
+    transform: translateY(-.4rem);
+    box-shadow: .1rem 1rem .4rem rgba(31, 51, 30,0.3);
+}
+.btn1:active{
+    transform: translateY(.1rem);
+}
+ .btn1::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+ }
+
+ .btn-white::after{
+    color: rgb(183, 224, 186);
+
+ }
+.btn1:hover::after{
+    background-color: rgb(168, 202, 173);
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0.1;
+    border-radius: 10rem;
+}
+.section-card {
+    background-color: #f7f7f7;
+    padding: 25rem 0 50rem 0;
+    margin-top: -33rem;
+    margin-bottom: 50px;
+ 
+ 
+ }
+
+.section-card {
+    background-color: #f7f7f7;
+    padding: 25rem 0 50rem 0;
+    margin-top: -33rem;
+    margin-bottom: 50px;
+ 
+ 
+ }
+
+.card1 {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+ }
+
+ .card-side{
+    height: 50rem;
+    transition: all .7s ease;
+    color: #f7f7f7;
+    font-size: 2rem;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: .3rem;
+    box-shadow: 0 1.5rem 4rem rgba(1, 24, 3, 0.267);
+ }
+ .card-side-front{
+    background-color: white;
+ }
+
+    .card-side-back {
+       
+        transform: rotateY(180deg);
+    }
+    .card-side-back-1{
+      background-image: linear-gradient(to right bottom,
+      rgba(243, 137, 17, 0.267)
+      ,rgba(121, 42, 6, 0.932) );
+       
+    }
+    
+    .card-side-back-2{
+      background-image: linear-gradient(to right bottom,
+      rgba(97, 8, 8, 0.267)
+      ,rgba(201, 35, 35, 0.932) );
+       
+    }
+    
+    .card-side-back-3{
+      background-image: linear-gradient(to right bottom,
+      rgba(45, 72, 221, 0.267)
+      ,rgba(13, 6, 77, 0.932) );
+       
+    }
+
+ .card1:hover .card-side-front {
+    transform: rotateY(180deg);
+ }
+ .card1:hover .card-side-back {
+    transform: rotateY(0);
+ }
+ .card-margin {
+    margin-top: 20rem;
+ }
+
+
+ .card-image1{
+    background-image:  linear-gradient(to right,
+     rgb(233, 141, 21),  rgb(109, 68, 15)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+ .card-image2{
+   background-image:  linear-gradient(to right,
+    rgb(219, 46, 46),  rgb(61, 5, 5)),
+     url(/static/Images/background.jpg);
+     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.card-image3{
+   background-image:  linear-gradient(to right,
+    rgb(62, 79, 235),  rgb(4, 5, 54)),
+     url(/static/Images/background.jpg);
+     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.card-image4{
+    background-image:  linear-gradient(to right,
+    rgb(233, 141, 21),  rgb(109, 68, 15)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+ .card-image5{
+    background-image:  linear-gradient(to right,
+    rgb(219, 46, 46),  rgb(61, 5, 5)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+ .card-image6{
+    background-image:  linear-gradient(to right,
+     rgb(62, 79, 235),  rgb(4, 5, 54)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+ .card-image7{
+    background-image:  linear-gradient(to right,
+    rgb(233, 141, 21), rgb(109, 68, 15)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+ .card-image8{
+    background-image:  linear-gradient(to right,
+    rgb(219, 46, 46),  rgb(61, 5, 5)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+ .card-image9{
+    background-image:  linear-gradient(to right,
+     rgb(62, 79, 235),  rgb(4, 5, 54)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+ .card-image10{
+    background-image:  linear-gradient(to right,
+    rgb(233, 141, 21), rgb(109, 68, 15)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+ .card-image11{
+    background-image:  linear-gradient(to right,
+    rgb(219, 46, 46),  rgb(61, 5, 5)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+ .card-image12{
+    background-image:  linear-gradient(to right,
+     rgb(62, 79, 235),  rgb(4, 5, 54)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+
+ .card-picture{
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+ }
+ .card-heading { 
+     font-size: 2.3rem;
+     font-weight: 70;
+     text-transform: uppercase;
+     color: #f7f7f7;
+     text-align: right;
+     position: absolute;
+     top: 16rem;
+     left: 4rem;
+     width: 75%;
+ }
+
+ .card-span{
+    padding: .5rem 1.8rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    margin-top: 2rem;
+ }
+ .card-span-1{
+     background-image: linear-gradient(to right bottom,
+      rgba(233, 141, 21, .6), 
+       rgba(109, 68, 15, .8));
+ }
+ .card-span-2{
+   background-image: linear-gradient(to right bottom,
+    rgba(238, 40, 40, 0.6), 
+     rgba(124, 10, 10, 0.8));
+}
+.card-span-3{
+   background-image: linear-gradient(to right bottom,
+    rgba(35, 47, 216, 0.6), 
+     rgba(5, 11, 66, 0.8));
+}
+.card-detail{
+    color: black;
+    padding: 3rem;
+}
+ul{
+    padding-left: 1rem;
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+}
+li{
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 1rem;
+}
+.lii:not(:last-child){
+    border-bottom: 2px solid rgb(219, 214, 214)  ;
+}
+
+.card-write{
+   text-align: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+.card-price-only{
+   margin: 5rem;
+   font-size: 2rem;
+   text-transform: uppercase;
+}
+.card-price-label{
+   margin: 4rem;
+   font-size: 6rem;
+   font-weight: 1rem;
+}
+
+.margin-bottom{
+    margin-bottom: 100px;
+}
+
+
+
+
+
+.row {
+    max-width : 114rem;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    margin-bottom: 8rem;    
+}
+.row:not(:last-child){
+    margin-right: 8rem;
+}
+
+
+
+[class^="col-"]{
+    margin-bottom: 8rem;
+    float: left;
+}
+.col-1-2{
+    width: calc((100% - 6rem)/2);
+}
+.col-1-2:not(:last-child){
+    margin-right: 6rem;
+}
+
+.col-1-3 {
+    width: calc((90% -12rem)/3);
+}
+.col-1-3:not(:last-child){
+    margin-right: 5.7rem;
+}
+
+.col-1-4{
+    width: calc((84% -18rem)/4);
+} 
+.col-1-4:not(:last-child){
+    margin-right: 6rem;
+}
+
+.col-1-3-a {
+    width: calc((90% -12rem)/3);
+    margin-right: 6rem;
+}
+.col-2-3{
+    width: calc(2 * ((89%-12rem)/3) + 6rem)
+}
+.col-2-4 {
+    width: calc(2* ((94.5% -12rem)/4) );
+}

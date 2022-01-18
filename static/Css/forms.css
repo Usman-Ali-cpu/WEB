@@ -1,0 +1,196 @@
+
+ul
+{
+    padding:0px;
+    width: 100%;
+    margin-left: 32%;
+    text-align: center;
+    margin-right: 30%;
+}
+nav ul li a{
+    color:rgb(182, 174, 174);
+    font-weight:500;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+ul li a:hover{
+    color:white;
+    /*background-color: white;*/
+}
+
+.active{
+   
+    font-size: 18px;
+    color: white;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0
+}
+
+.page {
+    padding: 2%;
+    margin: auto
+}
+
+.fa {
+    color: #f2dd1d
+}
+
+.card-img-top {
+    width: 90%;
+    height: 225px
+}
+
+.view {
+    background-color: #dfe6e0;
+    padding: 10px;
+    margin: 20px
+}
+
+.card {
+    width: 95%;
+    padding: 0px;
+    margin-left: 2%
+}
+
+.card-footer {
+    background-color: #ff772e;
+    font-weight: 700
+}
+
+.form-in{
+    margin-bottom: 100px;
+}
+.price {
+    color: #ff4517;
+    font-weight: 600
+}
+
+/*-----   order table    ----*/
+
+.main2{
+    border: 1px solid #ffffff29;
+    box-shadow: 2px 1px 5px 1px black;
+    transform: scale(1.02);
+
+}
+.sub-table{
+    width: 100%;
+}
+.sub-table input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ffffff52;
+    height: auto;
+    background: transparent;
+    padding: 0.5rem;
+    color: white;
+}
+::placeholder {
+    color: rgb(216, 214, 214);
+    /* color: rgb(197, 196, 196); */
+}
+.sub-table .product{
+    width: 100%;
+    background: #00000052;
+    border-color: #ffffff52;
+    padding: 0.5rem;
+    color: white;
+}
+.col_1{
+    width:30%;
+    padding: 1rem;
+}
+textarea{
+    width: 100%;
+    font-size: 90%;
+    background: transparent;
+    border-color: #ffffff52;
+    color: white;
+}
+.submit{
+    background: #000000c2;
+    text-align: center;
+    width: 20%;
+    cursor: pointer;
+    padding: 1%;
+    border: 2px solid #00000075;
+    transition: 0.5s;
+    
+}
+.submit:hover{
+    box-shadow: 0px 0px 3px 2px;
+    transform: scale(1.1);
+}
+form{
+color:white;
+
+}
+tr td{
+    color: white;
+}
+tr .date{
+    padding-top: 100px;
+}
+.space
+{
+    word-spacing: 50px;
+}
+.form-section{
+    height: 110vh;
+}
+
+.title-head{
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
+   }
+
+.upload-btn-wrapper {
+  height: 100px;
+}
+
+
+.input-file-trigger {
+  padding: 10px 30px;
+  background: #ebebeb;
+  color: rgb(31, 29, 29);
+  font-size: 1em;
+  transition: all .4s;
+  cursor: pointer;
+}
+.input-file {
+  width: 125px;
+  opacity: 0;
+  padding: 14px 0;
+  cursor: pointer;
+}
+.input-file:hover + .input-file-trigger,
+.input-file:focus + .input-file-trigger,
+.input-file-trigger:hover,
+.input-file-trigger:focus {
+  background: #101011;
+  color: #eeeeee;
+}
+.add-button {
+  background-color: #787978; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.add-button:hover{
+    color: #dfe6e0;
+    text-decoration: none;
+}

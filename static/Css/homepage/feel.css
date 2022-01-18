@@ -1,0 +1,208 @@
+.feel-section{
+    padding-top: 20px;
+    height: 800px;
+
+}
+.booking{
+    height: 700px;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    /* align-items: center; */
+    align-items: stretch;
+
+}
+.picture{
+    height: 630px;
+    width: 550px;
+    background-image: linear-gradient(45deg, 
+    rgba(63, 64, 70, 0.3),
+     rgba(1, 2, 3, 0.4)),
+      url('/static/Images/feel.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.writings{
+    height: 630px;
+    width: 300px;
+
+}
+.single-writing{
+    text-align: center;
+    height: 180px;
+    font-weight: 340;
+    margin-bottom: 10px;
+
+}
+.feel-image{
+    height: 600px;
+    width: 550px
+}
+.single-write-head{ 
+    color: rgb(122, 122, 122);
+    font-family: Bahnschrift;
+    margin-top: -5px;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 480;
+}
+.single-write-para{
+    margin-top: -25px;
+    color: rgb(122, 122, 122);
+    font-family: Bahnschrift;
+    font-size: 16px;
+}
+.write-hr{
+    width: 2px;
+    height: 25px;
+    color: rgb(53, 51, 51);
+    background-color: rgb(110, 110, 110);
+    rotate: 90deg;
+    position: relative;
+    left: 50%;
+}
+.position{
+    position: relative;
+    top: 35%;
+    left: 5%;
+}
+.margin-head{
+    text-align: center;
+    margin-bottom: 50px;
+    width: 400px;
+    position: relative;
+    left: 30%;
+}
+.center-feel{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 760px){
+
+    html{
+        width: 760px;
+    }
+
+
+    .feel-section{
+        padding-top: 20px;
+        height: 1800px;
+    
+    }
+    .booking{
+        height: 1100px;
+        display: flex;
+        position: relative;
+        justify-content:space-evenly;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 80px;
+    }
+    .picture{
+        height: 630px;
+        width: 450px;
+        background-image: linear-gradient(45deg, 
+        rgba(40, 81, 194, 0.3),
+         rgba(40, 81, 194, 0.4)),
+          url('../Images/pic1.jpg');
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 50px;
+        
+    }
+    .position{
+        margin-left: 50px;
+
+    }
+    .writings{
+        height: 630px;
+        width: 300px;
+    
+    }
+    .single-writing{
+        text-align: center;
+        height: 180px;
+        font-weight: 340;
+        margin-bottom: 10px;
+    
+    }
+    .feel-image{
+        height: 600px;
+        width: 550px
+    
+    }
+    .single-write-head{ 
+        color: rgb(122, 122, 122);
+        font-family: Bahnschrift;
+        margin-top: -5px;
+        text-transform: capitalize;
+        font-size: 22px;
+        font-weight: 480;
+    }
+    .single-write-para{
+        margin-top: -25px;
+        color: rgb(122, 122, 122);
+        font-family: Bahnschrift;
+        font-size: 16px;
+    }
+    .write-hr{
+        width: 2px;
+        height: 25px;
+        color: rgb(53, 51, 51);
+        background-color: rgb(110, 110, 110);
+        rotate: 90deg;
+        position: relative;
+        left: 50%;
+    }
+    .position{
+        position: relative;
+        top: 35%;
+        left: 5%;
+
+    }
+    .dream{
+        font-size: 50px;
+    }
+    .margin-head{
+        text-align: center;
+        margin-bottom: 50px;
+        width: 400px;
+        position: relative;
+        left: 30%;
+    }
+    .center-feel{
+        text-align: center;
+    }
+}

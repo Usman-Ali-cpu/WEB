@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.heading-text{
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
+}
+.heading-main1{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-height{
+    height: 50px;
+}
+
+
+.card-title{
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
+   }
+.card-text{
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+   font-family: "Roboto",Helvetica,Arial,sans-serif;
+    margin-bottom: 35px;
+}
+.card-body{
+    padding: 10px;
+}
+.card-section{
+    height: 600px;
+}
+.container{
+    height: 100% ;
+}
+.row{
+      height: 100% ;
+
+}
+.col{
+      height: 100% ;
+}
+.card-img-top{
+    height: 40%;
+    border-radius: 30px;
+
+}
+.card{
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: rgb(233, 233, 235);
+}
+.round-btn{
+    color: rgb(233, 234, 236);
+    background-color: rgb(59, 59, 59);
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    border-radius: 35px;
+}
+.round-btn:hover{
+    color: rgb(0, 0, 0);
+    background-color:rgb(230, 230, 230); 
+}
