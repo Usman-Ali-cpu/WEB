@@ -268,3 +268,6 @@ select:focus + .focus {
     text-decoration: none;
 }
 
+.text-big{
+    font-size: 18px;
+}

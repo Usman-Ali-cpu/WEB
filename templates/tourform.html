@@ -54,7 +54,7 @@
         </div>
     </section>
     <section class="form-section form-sec">
-        <form class="form-in">
+        <form action="/submittour" class="form-in" method="post" enctype="multipart/form-data">
             <table class="main2 col-11 col-md-8"
                 style="color: white; background: #00000085; margin: 3rem auto !important;">
                 <tr>
@@ -104,6 +104,15 @@
                 <tr>
                     <td>
                         <table class="sub-table">
+                            <td class="col_1"><label for="description">description</label></td>
+                            <td><input type="text" name="description" id="description" placeholder="description"
+                                    required></td>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="sub-table">
                             <td class="col_1"><label for="location">Location</label></td>
                             <td><input type="text" name="location" id="location" placeholder="Location" required></td>
                         </table>
@@ -123,13 +132,14 @@
                 </tr>
 
                 <!-- Date picker-->
-                <tr class="date ">
-                    <td class="sub-table">
-                        <table class="sub-table"><br>
-                            <td class="col_1"><label for="requests">Availability Duration</label></td>
-                            <td>Start Date: <input id="startDate" name="startDate" width="276" /></td>
-                            <td>End Date: <input id="endDate" name="endDate" width="276" /></td>
-
+                <tr class="date">
+                    <td><br>
+                        <table class="sub-table">
+                            <td class="col_1"><label for="requests">Tour availability Duration</label></td>
+                            <td>Start Date: <input type='date' name="startDate" id="startDate" width="276"
+                                    placeholder="Select Date" />
+                            </td>
+                            <td>End Date: <input type="date" name="endDate" id="endDate" width="276" /></td>
                             <script>
                                 var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
                                 $('#startDate').datepicker({
@@ -151,7 +161,6 @@
                         </table>
                     </td>
                 </tr>
-
 
                 <tr>
                     <td class="sub-table">

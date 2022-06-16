@@ -73,3 +73,20 @@ class UserModel:
         finally:
             if cursor != None:
                 cursor.close()
+
+    def getuserid(self, username):
+        try:
+            if self.connection != None:
+                cursor = self.connection.cursor()
+                cursor.execute("select user_id , name, password from users")
+                users = cursor.fetchall()
+                for u in users:
+                    print(str(u))
+                    if u[1] == username:
+                        return int(u[0])
+                return -1
+        except Exception as e:
+            print("Exception in Login User", str(e))
+        finally:
+            if cursor != None:
+                cursor.close()

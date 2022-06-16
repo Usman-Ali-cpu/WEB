@@ -48,16 +48,14 @@
                         </div> -->
         </div>
     </section>
-
-
-    <form>
+    <form action="/submitexp" class="form-in" method="post" enctype="multipart/form-data">
         <table class="main2 col-11 col-md-8" style="color: white; background: #00000085; margin: 3rem auto !important;">
             <tr>
                 <th>
                     <table class="sub-table">
                         <td>
-                            <h1 class="p-2 title-head " style="color: white; text-align: center;">Share your Experiences
-                                here!</h1>
+                            <h1 class="p-2 title-head" style="color: white; text-align: center;">In-Person Experience
+                                Details</h1>
                         </td>
                     </table>
                 </th>
@@ -65,8 +63,18 @@
             <tr>
                 <td>
                     <table class="sub-table">
-                        <td class="col_1"><label for="name">Name</label></td>
-                        <td><input type="text" name="name" id="name" placeholder="Name" class="" required></td>
+                        <td class="col_1"><label for="fname">Name</label></td>
+                        <td><input type="text" name="fname" id="fname" placeholder="Name" class="" required></td>
+                    </table>
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td>
+                    <table class="sub-table">
+                        <td class="col_1"><label for="email">E-mail</label></td>
+                        <td><input type="email" name="email" id="email" placeholder="Enter Your E-mail" required>
+                        </td>
                     </table>
                 </td>
             </tr>
@@ -81,16 +89,17 @@
             <tr>
                 <td>
                     <table class="sub-table">
-                        <td class="col_1"><label for="age">Age</label></td>
-                        <td><input type="number" min="0" name="age" id="age" placeholder="Age" required></td>
+                        <td class="col_1"><label for="title">Title</label></td>
+                        <td><input type="text" name="title" id="title" placeholder="Title" required></td>
                     </table>
                 </td>
             </tr>
             <tr>
                 <td>
                     <table class="sub-table">
-                        <td class="col_1"><label for="title">Title of Experience</label></td>
-                        <td><input type="text" name="title" id="title" placeholder="Title" required></td>
+                        <td class="col_1"><label for="description">description</label></td>
+                        <td><input type="text" name="description" id="description" placeholder="description" required>
+                        </td>
                     </table>
                 </td>
             </tr>
@@ -102,41 +111,71 @@
                     </table>
                 </td>
             </tr>
+
             <tr>
                 <td>
                     <table class="sub-table">
-                        <td class="col_1"><label for="category">Catagory of Experience</label></td>
-                        <td><input type="text" name="category" id="category" placeholder="Catagory" required></td>
+                        <td class="col_1"></td>
+                        <td><input type="number" min="1" name="days" id="days" placeholder="No of Days"></td>
+                        <td><input type="number" min="1" name="capacity" id="capacity"
+                                placeholder="Max Capacity(Persons)"></td>
+                        <td><input type="number" min="0" name="price" id="price" placeholder="Price"></td>
+                        <td><input type="number" min="0" name="ages" id="ages" placeholder="ages">
+                        </td>
                     </table>
                 </td>
             </tr>
+
+            <!-- Date picker-->
+            <tr class="date">
+                <td><br>
+                    <table class="sub-table">
+                        <td class="col_1"><label for="requests">Tour availability Duration</label></td>
+                        <td>Start Date: <input type='date' name="startDate" id="startDate" width="276"
+                                placeholder="Select Date" />
+                        </td>
+                        <td>End Date: <input type="date" name="endDate" id="endDate" width="276" /></td>
+                        <script>
+                            var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+                            $('#startDate').datepicker({
+                                uiLibrary: 'bootstrap4',
+                                iconsLibrary: 'fontawesome',
+                                minDate: today,
+                                maxDate: function () {
+                                    return $('#endDate').val();
+                                }
+                            });
+                            $('#endDate').datepicker({
+                                uiLibrary: 'bootstrap4',
+                                iconsLibrary: 'fontawesome',
+                                minDate: function () {
+                                    return $('#startDate').val();
+                                }
+                            });
+                        </script>
+                    </table>
+                </td>
+            </tr>
+
             <tr>
                 <td class="sub-table">
-                    <table><br>
-                        <td class="col_1"><label for="requests">Share your exprience and review here</label></td>
-                        <td><textarea type="comment" rows="5" cols="100" name="requests" id="requests"
-                                placeholder="Write here"></textarea></td>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td class="upload-btn-wrapper">
-                    <table class="sub-table">
+                    <table class="">
 
                         <td class="col_1"><label for="l_name">Upload Pictures</label></td>
-                        <td><input class="input-file" id="my-file1" type="file">
-                            <label tabindex="0" for="my-file" class="input-file-trigger">Add a Picture</label>
+                        <td><input class="input-file" name='my-file1' id="my-file1" type="file"
+                                onchange="uploadFile(this)" required>
+                            <label tabindex="0" for="my-file1" class="input-file-trigger">Add a Picture</label>
                         </td>
                         <td>
-                            <input class="input-file" id="my-file2" type="file">
-                            <label tabindex="0" for="my-file" class="input-file-trigger">Add a Picture</label>
+                            <input class="input-file" name='my-file2' id="my-file2" type="file"
+                                onchange="uploadFile(this)" required>
+                            <label tabindex="0" for="my-file2" class="input-file-trigger">Add a Picture</label>
                         <td>
-                            <input class="input-file" id="my-file3" type="file">
-                            <label tabindex="0" for="my-file" class="input-file-trigger">Add a Picture</label>
-
+                            <input class="input-file" name='my-file3' id="my-file3" type="file"
+                                onchange="uploadFile(this)" required>
+                            <label tabindex="0" for="my-file3" class="input-file-trigger">Add a Picture</label>
                         </td>
                     </table>
-
                 </td>
             </tr>
 
@@ -148,6 +187,10 @@
             </tr>
         </table>
     </form>
+
+
+
+
     <section class="footer-section">
 
         <div class="containerss">
@@ -243,6 +286,7 @@
         </div>
 
     </section>
+    <script src="/static/JS/addpicture.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 

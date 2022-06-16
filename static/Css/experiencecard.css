@@ -1,0 +1,85 @@
+
+ .experience-image1{
+    background-image:  linear-gradient(to right,
+     rgb(233, 141, 21),  rgb(109, 68, 15)),
+      url(/static/Images/exp1.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+ .experience-image2{
+   background-image:  linear-gradient(to right,
+    rgb(219, 46, 46),  rgb(61, 5, 5)),
+     url(/static/Images/background.jpg);
+     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.experience-image3{
+   background-image:  linear-gradient(to right,
+    rgb(62, 79, 235),  rgb(4, 5, 54)),
+     url(/static/Images/background.jpg);
+     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.experience-image4{
+    background-image:  linear-gradient(to right,
+    rgb(233, 141, 21),  rgb(109, 68, 15)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+ .experience-image5{
+    background-image:  linear-gradient(to right,
+    rgb(219, 46, 46),  rgb(61, 5, 5)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+ .experience-image6{
+    background-image:  linear-gradient(to right,
+     rgb(62, 79, 235),  rgb(4, 5, 54)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+ .experience-image7{
+    background-image:  linear-gradient(to right,
+    rgb(233, 141, 21), rgb(109, 68, 15)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+ .experience-image8{
+    background-image:  linear-gradient(to right,
+    rgb(219, 46, 46),  rgb(61, 5, 5)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+ .experience-image9{
+    background-image:  linear-gradient(to right,
+     rgb(62, 79, 235),  rgb(4, 5, 54)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+ .experience-image10{
+    background-image:  linear-gradient(to right,
+    rgb(233, 141, 21), rgb(109, 68, 15)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+ .experience-image11{
+    background-image:  linear-gradient(to right,
+    rgb(219, 46, 46),  rgb(61, 5, 5)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }
+ .experience-image12{
+    background-image:  linear-gradient(to right,
+     rgb(62, 79, 235),  rgb(4, 5, 54)),
+      url(/static/Images/background.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+ }

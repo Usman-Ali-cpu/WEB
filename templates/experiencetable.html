@@ -1,0 +1,115 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/Css/homepage/header.css">
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Table</title>
+</head>
+
+<body>
+    <style>
+        main {
+            padding: 20px;
+        }
+
+        .link1 {
+            color: rgb(15, 33, 49);
+            text-decoration: none;
+            font-family: Monaco, Consolas;
+        }
+    </style>
+    <main>
+        <section class="navigation-section bg-white">
+            <div class="container text-black">
+                <div class="item it">
+                    <h5 class="link1 j heading text-black">DISCOVER TRAVELS</h5>
+                    <small class="link1 j heading-small text-black">Travel With Experience </small>
+                </div>
+                <div class="item if">
+
+                    <div class="i"> <a href="/homepage" class="link1 link-c btn-logout text-black">home</a></div>
+                    <div class="i"><a href="/exptable" class="link1 link-c btn-logout text-black">Experiences</a></div>
+                    <div class="i"><a href="/tourtable" class="link1 link-c btn-logout text-black">Tours</a>
+                    </div>
+                    <div class="i"><a href="/tourslist" class="link1 link-c btn-logout text-black">Trips</a></div>
+                    <div class="i">
+                        <form action="/logout" method="post">
+                            <button type="submit" class="link1 link-c text-black btn-logout">Logout</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <table class="table" id="table_id">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Experience Title</th>
+                    <th scope="col">Experience Price</th>
+                    <th scope="col">Experience Location</th>
+                    <th scope="col">Experience Capacity</th>
+                    <th scope="col">Experience Valid for Days</th>
+                    <th scope="col">Experience Starting Date</th>
+                    <th scope="col">Experience Ending Date</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                {%for exp in experiencelist %}
+                <script>
+                    function deliver(a) {
+                        $.ajax({
+                            type: "POST",
+                            contentType: "application/json;charset=utf-8",
+                            url: "/delivered",
+                            data: JSON.stringify(expereinece),
+                            success: function () {
+                                console.log("Success!")
+                                data: JSON.stringify(expereinece),
+                            },
+                            dataType: "json"
+                        });
+                        console.log("Deliverd")
+                        //document.getElementById(a.id).parentNode.parentNode.remove()
+                    }
+                </script>
+                <!-- $("button").click(function(){
+                $.get("demo_test.asp", function(data, status){
+                alert("Data: " + data + "\nStatus: " + status);
+                });
+                }); -->
+                <tr>
+                    <th scope="row">{{exp.experience_id}}</th>
+                    <td>{{exp.experience_title}}</td>
+                    <td>{{exp.experience_price_default}}</td>
+                    <td>{{exp.experience_days}}</td>
+                    <td>{{exp.experience_location}}</td>
+                    <td>{{exp.experience_capacity}}</td>
+                    <td>{{exp.experience_start_date}}</td>
+                    <td>{{exp.experience_end_date}}</td>
+                    <!-- <td>
+                        <form action="/exptabl" method="post">
+                            <input type="text" name="exp1" id="{{exp.experience_id}}" style="display: none;">
+                            <button class="btn btn-danger">Delete </button>
+                        </form>
+                    </td> -->
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </main>
+    <script src="/static/JS/jquerytable.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/Css/homepage/header.css">
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/Css/homepage/header.css">
+    <title>Admin-Table</title>
+</head>
+
+<body>
+    <style>
+        main {
+            padding: 20px;
+        }
+
+        .link1 {
+            color: rgb(15, 33, 49);
+            text-decoration: none;
+            font-family: Monaco, Consolas;
+        }
+    </style>
+    <main>
+        <section class="navigation-section ">
+            <div class="container text-black">
+                <div class="item it">
+                    <h5 class="link1 j heading text-black">DISCOVER TRAVELS</h5>
+                    <small class="link1 j heading-small text-black">Travel With Experience </small>
+                </div>
+                <div class="item if">
+
+                    <div class="i"> <a href="/homepage" class="link1 link-c btn-logout text-black">home</a></div>
+                    <div class="i"><a href="/exptable" class="link1 link-c btn-logout text-black">Experiences</a></div>
+                    <div class="i"><a href="/tourtable" class="link1 link-c btn-logout text-black">Tours</a>
+                    </div>
+                    <div class="i"><a href="/tourslist" class="link1 link-c btn-logout text-black">Trips</a></div>
+                    <div class="i">
+                        <form action="/logout" method="post">
+                            <button type="submit" class="link1 link-c text-black btn-logout">Logout</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <table class="table" id="table_id">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Tour Title</th>
+                    <th scope="col">Tour Price</th>
+                    <th scope="col">Tour Location</th>
+                    <th scope="col">Tour Capacity</th>
+                    <th scope="col">Tour Valid for Days</th>
+                    <th scope="col">Tour Starting Date</th>
+                    <th scope="col">Tour Ending Date</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                {%for tour in tourlist %}
+                <tr>
+                    <th scope="row">{{tour.tour_id}}</th>
+                    <td>{{tour.tour_title}}</td>
+                    <td>{{tour.tour_price_default}}</td>
+                    <td>{{tour.tour_days}}</td>
+                    <td>{{tour.tour_location}}</td>
+                    <td>{{tour.tour_capacity}}</td>
+                    <td>{{tour.tour_start_date}}</td>
+                    <td>{{tour.tour_end_date}}</td>
+                    <!-- <td>
+                        <form action="/exptabl" method="post">
+                            <input type="text" name="exp1" id="{{tour.tour_id}}" style="display: none;">
+                            <button class="btn btn-danger">Delete </button>
+                        </form>
+                    </td> -->
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </main>
+    <script src="/static/JS/jquerytable.js"></script>
+
+</body>
+
+</html>
